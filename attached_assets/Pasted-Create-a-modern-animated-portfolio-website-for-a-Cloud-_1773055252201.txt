@@ -1,0 +1,209 @@
+Create a modern **animated portfolio website** for a **Cloud Engineer** using **HTML, CSS, JavaScript (or React if preferred)**.
+
+Design Theme:
+The theme should represent **Cloud Computing + Neuron Network visualization**.
+Use animated **cloud particles, neural network lines, glowing nodes, and floating infrastructure icons (servers, cloud, network)** in the background.
+
+Design Style:
+• Futuristic cloud infrastructure theme
+• Smooth animations and parallax scrolling
+• Neural network style connecting dots animation in background
+• Floating cloud icons and glowing connections
+• Dark theme with cloud blue (#00AEEF), purple, and white highlights
+• Animated sections appearing on scroll
+• Professional and modern UI suitable for a Cloud Engineer
+
+Website Sections Required:
+
+1. Hero Section
+   Animated neural network background that resembles cloud infrastructure nodes.
+
+Display:
+
+Name: **DEEPAK VARMA**
+Title: **Cloud Engineer**
+
+Professional Overview:
+Cloud Engineer with 2.5 years of experience in Microsoft Azure and AWS. Skilled in infrastructure deployment, identity and access management, VPN setup, Azure Virtual Desktop (AVD), and cloud security. Experienced in monitoring and threat detection using Microsoft Sentinel, with a strong focus on secure, scalable, and cost-effective cloud solutions. Certified in AZ-900, AZ-104, AZ-700, SC-900, and AWS Cloud Practitioner.
+
+Contact:
+Phone: +91 7715094490
+Email: [deepak010412@gmail.com](mailto:deepak010412@gmail.com)
+Location: Mumbai, MH 400037
+LinkedIn: linkedin.com/in/deepak-varma-5920b2248
+
+Add animated cloud icons floating around.
+
+Include buttons:
+Download Resume
+Contact Me
+
+---
+
+2. Work Experience Section
+   Use animated timeline nodes connected like a neural network.
+
+Cloud Engineer
+LDS Infotech Pvt Ltd | Mumbai | April 2024 - Present
+
+Responsibilities:
+Managed Azure and AWS infrastructure including VMs, storage, load balancers, and networking.
+
+Delivered cloud webinars and conducted internal/external cloud training sessions for teams and clients.
+
+Administered Microsoft AD, Entra ID, Intune, RBAC, IAM roles, and Conditional Access for identity and device management.
+
+Performed subscription-to-subscription migrations and optimized resource utilization across tenants.
+
+Configured Site-to-Site and Point-to-Site VPNs for secure hybrid connectivity.
+
+Implemented Azure Backup, Recovery Services Vault, and disaster recovery solutions.
+
+Managed Azure Storage, lifecycle policies, and secure access configurations.
+
+Configured and maintained Azure Virtual Desktop (AVD).
+
+Deployed and supported Azure App Service and application hosting environments.
+
+Integrated and managed hybrid resources using Azure Arc.
+
+Monitored environments using Azure Monitor, Network Watcher, and alerting dashboards.
+
+Strengthened security posture with Microsoft Sentinel and Defender for Cloud.
+
+---
+
+Analyst
+eClerx Pvt. Ltd | Mumbai | June 2023 – December 2023
+
+Responsibilities:
+
+Gained hands-on exposure to healthcare marketing and sales enablement through research, analysis, and content development.
+
+Handled support tickets from U.S. clients and resolved issues related to laptops, internet connectivity, ISP gateways, home security devices, TVs, and Ethernet amplifiers.
+
+Communicated directly with customers to diagnose problems and provide quick, effective solutions.
+
+Performed gateway setup, fixed slow internet issues, and supported day-to-day technical troubleshooting.
+
+---
+
+3. Skills Section
+   Display skills as **animated floating nodes connected like a neural network graph**.
+
+Compute & Infrastructure
+Entra ID
+Active Directory
+Azure AVD
+Azure Arc
+Networking
+Storage & Backup
+Security & Monitoring
+App Services
+Disaster Recovery
+Tools & Management
+Soft Skills
+
+---
+
+4. Certifications Section
+   Display certification badges with cloud animation.
+
+AZ-900
+SC-900
+AZ-104
+AZ-700
+AWS Cloud Practitioner
+Cisco – Basic Networking
+Appearing AZ-140
+
+---
+
+5. Education Section
+
+MSc.IT
+2021 – 2024
+GN Khalsa College (Matunga), MU
+Grade – 7.8 CGPA
+
+BSc
+2017 – 2022 (MU)
+SIWS College, MU
+Grade – 6.2 CGPA
+
+---
+
+6. Projects Section
+   Each project should appear as animated cards connected with network lines.
+
+Atumverse Solution Pvt Ltd
+
+Planned and assessed existing Azure infrastructure to create a detailed migration and dependency analysis report.
+
+Executed end-to-end subscription-to-subscription migration for Azure resources with minimal downtime.
+
+Migrated key Azure services including Virtual Machines, Networking components, Storage Accounts, and Resource Groups.
+
+Ensured post-migration validation, access control reconfiguration, and cost optimization in the target subscription.
+
+---
+
+Symbiosis International University
+
+Implemented Azure Arc for 270+ on-premises servers with automated patching and centralized monitoring.
+
+Designed Hybrid AD & Entra ID architecture with Azure-hosted PDC and 17 RODC.
+
+Optimized identity management by consolidating 7 tenants into 2 supporting 100K+ users.
+
+---
+
+Compass Global Pvt Ltd
+
+Designed and implemented an Active-Passive Disaster Recovery (DR) solution for the production environment.
+
+Performed in-place upgrades of Azure Windows Server 2012 R2 VMs to the latest supported version.
+
+Data migration from cloud to on-premises.
+
+---
+
+7. Languages Section
+
+English
+Hindi
+Marathi
+
+Display language icons.
+
+---
+
+8. Footer Section
+
+Show animated cloud network background.
+
+Display:
+
+DEEPAK VARMA
+Cloud Engineer
+
+Phone: +91 7715094490
+Email: [deepak010412@gmail.com](mailto:deepak010412@gmail.com)
+LinkedIn: linkedin.com/in/deepak-varma-5920b2248
+
+Add small animated cloud and neural network lines.
+
+---
+
+Extra Features to Implement:
+
+• Neural network animated background using canvas or Three.js
+• Smooth scroll animations
+• Responsive mobile design
+• Hover effects on skills and project cards
+• Cloud particles animation
+• Interactive node network animation connecting sections
+
+Make the portfolio look **like a futuristic cloud infrastructure dashboard with neural network visualization**.
+
+Ensure the site is **professional enough for recruiters and cloud engineering roles**.
