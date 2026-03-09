@@ -4,12 +4,11 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { 
   Cloud, Server, Shield, Terminal, Database, GitBranch, 
-  Cpu, Code2, Network, ExternalLink, ChevronRight, Download, Send, X, Moon, Sun
+  Cpu, Code2, Network, ExternalLink, ChevronRight, Download, Send, X
 } from "lucide-react";
 import { insertMessageSchema } from "@shared/schema";
 import { useCreateMessage } from "@/hooks/use-messages";
 import { useToast } from "@/hooks/use-toast";
-import { useTheme } from "@/components/theme-provider";
 import { ParticlesBackground } from "@/components/ParticlesBackground";
 import { z } from "zod";
 
@@ -24,7 +23,6 @@ type FormValues = z.infer<typeof formSchema>;
 
 export default function Home() {
   const { toast } = useToast();
-  const { theme, toggleTheme } = useTheme();
   const createMessage = useCreateMessage();
 
   const form = useForm<FormValues>({
@@ -63,27 +61,13 @@ export default function Home() {
           <span className="hidden sm:inline">DEEPAK VARMA | Cloud Engineer</span>
           <span className="sm:hidden">DEEPAK VARMA</span>
         </div>
-        <div className="flex items-center gap-4 md:gap-8">
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
-            <a href="#experience" className="hover:text-primary transition-colors">Experience</a>
-            <a href="#skills" className="hover:text-primary transition-colors">Skills</a>
-            <a href="#projects" className="hover:text-primary transition-colors">Projects</a>
-            <a href="#contact" className="px-4 py-2 rounded-lg bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-all">
-              Contact
-            </a>
-          </div>
-          <button
-            onClick={toggleTheme}
-            className="p-2 rounded-lg glass-card hover:bg-white/10 dark:hover:bg-white/5 transition-colors border border-white/10 dark:border-white/10"
-            aria-label="Toggle theme"
-            data-testid="button-theme-toggle"
-          >
-            {theme === "dark" ? (
-              <Sun className="w-5 h-5 text-yellow-400" />
-            ) : (
-              <Moon className="w-5 h-5 text-slate-600" />
-            )}
-          </button>
+        <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
+          <a href="#experience" className="hover:text-primary transition-colors">Experience</a>
+          <a href="#skills" className="hover:text-primary transition-colors">Skills</a>
+          <a href="#projects" className="hover:text-primary transition-colors">Projects</a>
+          <a href="#contact" className="px-4 py-2 rounded-lg bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-all">
+            Contact
+          </a>
         </div>
       </nav>
 
