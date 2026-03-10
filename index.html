@@ -19,7 +19,6 @@
     
     <!-- Animation Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.umd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsx/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.0.3/tsparticles.bundle.min.js"></script>
 
     <script>
@@ -100,6 +99,21 @@
         .scroll-smooth {
             scroll-behavior: smooth;
         }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: hsl(222 47% 6%);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: hsl(216 50% 20%);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: hsl(196 100% 47%);
+        }
     </style>
 </head>
 <body class="scroll-smooth">
@@ -116,6 +130,7 @@
             <a href="#experience" class="hover:text-primary transition-colors">Experience</a>
             <a href="#skills" class="hover:text-primary transition-colors">Skills</a>
             <a href="#projects" class="hover:text-primary transition-colors">Projects</a>
+            <a href="#credentials" class="hover:text-primary transition-colors">Credentials</a>
             <a href="#contact" class="px-4 py-2 rounded-lg bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-all">Contact</a>
         </div>
     </nav>
@@ -136,7 +151,7 @@
             </h1>
             
             <p class="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-                Cloud Engineer with 2.5 years of experience in Microsoft Azure and AWS. Skilled in infrastructure deployment, identity and access management, VPN setup, Azure Virtual Desktop (AVD), and cloud security.
+                Cloud Engineer with 2.5 years of experience in Microsoft Azure and AWS. Skilled in infrastructure deployment, identity and access management, VPN setup, Azure Virtual Desktop (AVD), and cloud security. Experienced in monitoring and threat detection using Microsoft Sentinel.
             </p>
 
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -172,7 +187,7 @@
                         <span class="text-sm text-muted-foreground font-mono bg-white/5 px-3 py-1 rounded-md">April 2024 - Present</span>
                     </div>
                     <p class="text-muted-foreground mb-4 leading-relaxed">
-                        Managed Azure and AWS infrastructure including VMs, storage, load balancers, and networking. Administered Microsoft AD, Entra ID, Intune, RBAC.
+                        Managed Azure and AWS infrastructure including VMs, storage, load balancers, and networking. Administered Microsoft AD, Entra ID, Intune, RBAC. Performed subscription migrations and configured VPNs. Implemented Azure Backup and managed Azure Virtual Desktop (AVD).
                     </p>
                     <div class="flex flex-wrap gap-2">
                         <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-white/5 border border-white/10">Azure</span>
@@ -195,7 +210,7 @@
                         <span class="text-sm text-muted-foreground font-mono bg-white/5 px-3 py-1 rounded-md">June 2023 – Dec 2023</span>
                     </div>
                     <p class="text-muted-foreground mb-4 leading-relaxed">
-                        Gained hands-on exposure to healthcare marketing and sales enablement. Handled support tickets from U.S. clients.
+                        Gained hands-on exposure to healthcare marketing and sales enablement. Handled support tickets from U.S. clients and resolved networking, internet connectivity, and hardware issues.
                     </p>
                     <div class="flex flex-wrap gap-2">
                         <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-white/5 border border-white/10">Support</span>
@@ -218,19 +233,35 @@
             <!-- Skill Items -->
             <div class="glass-card p-6 rounded-2xl flex flex-col items-center text-center gap-4 group opacity-0 scale-90 transition-all duration-500">
                 <div class="p-4 rounded-xl bg-white/5 text-primary group-hover:text-accent transition-colors"><i data-lucide="cloud" class="w-8 h-8"></i></div>
-                <div><h4 class="font-bold">Compute & Infra</h4><p class="text-xs text-muted-foreground">Core</p></div>
+                <div><h4 class="font-bold">Compute & Infra</h4><p class="text-xs text-muted-foreground">Azure & AWS</p></div>
             </div>
             <div class="glass-card p-6 rounded-2xl flex flex-col items-center text-center gap-4 group opacity-0 scale-90 transition-all duration-500">
                 <div class="p-4 rounded-xl bg-white/5 text-primary group-hover:text-accent transition-colors"><i data-lucide="shield" class="w-8 h-8"></i></div>
-                <div><h4 class="font-bold">Identity & Access</h4><p class="text-xs text-muted-foreground">Security</p></div>
+                <div><h4 class="font-bold">Identity & Access</h4><p class="text-xs text-muted-foreground">Entra ID & AD</p></div>
             </div>
             <div class="glass-card p-6 rounded-2xl flex flex-col items-center text-center gap-4 group opacity-0 scale-90 transition-all duration-500">
                 <div class="p-4 rounded-xl bg-white/5 text-primary group-hover:text-accent transition-colors"><i data-lucide="network" class="w-8 h-8"></i></div>
-                <div><h4 class="font-bold">Networking</h4><p class="text-xs text-muted-foreground">Infrastructure</p></div>
+                <div><h4 class="font-bold">Networking</h4><p class="text-xs text-muted-foreground">VPN & ExpressRoute</p></div>
             </div>
             <div class="glass-card p-6 rounded-2xl flex flex-col items-center text-center gap-4 group opacity-0 scale-90 transition-all duration-500">
                 <div class="p-4 rounded-xl bg-white/5 text-primary group-hover:text-accent transition-colors"><i data-lucide="database" class="w-8 h-8"></i></div>
-                <div><h4 class="font-bold">Storage</h4><p class="text-xs text-muted-foreground">Data</p></div>
+                <div><h4 class="font-bold">Storage</h4><p class="text-xs text-muted-foreground">Backup & DR</p></div>
+            </div>
+            <div class="glass-card p-6 rounded-2xl flex flex-col items-center text-center gap-4 group opacity-0 scale-90 transition-all duration-500">
+                <div class="p-4 rounded-xl bg-white/5 text-primary group-hover:text-accent transition-colors"><i data-lucide="server" class="w-8 h-8"></i></div>
+                <div><h4 class="font-bold">Virtualization</h4><p class="text-xs text-muted-foreground">AVD & Arc</p></div>
+            </div>
+            <div class="glass-card p-6 rounded-2xl flex flex-col items-center text-center gap-4 group opacity-0 scale-90 transition-all duration-500">
+                <div class="p-4 rounded-xl bg-white/5 text-primary group-hover:text-accent transition-colors"><i data-lucide="cpu" class="w-8 h-8"></i></div>
+                <div><h4 class="font-bold">Automation</h4><p class="text-xs text-muted-foreground">Terraform & ARM</p></div>
+            </div>
+            <div class="glass-card p-6 rounded-2xl flex flex-col items-center text-center gap-4 group opacity-0 scale-90 transition-all duration-500">
+                <div class="p-4 rounded-xl bg-white/5 text-primary group-hover:text-accent transition-colors"><i data-lucide="code-2" class="w-8 h-8"></i></div>
+                <div><h4 class="font-bold">App Services</h4><p class="text-xs text-muted-foreground">Web Apps</p></div>
+            </div>
+            <div class="glass-card p-6 rounded-2xl flex flex-col items-center text-center gap-4 group opacity-0 scale-90 transition-all duration-500">
+                <div class="p-4 rounded-xl bg-white/5 text-primary group-hover:text-accent transition-colors"><i data-lucide="git-branch" class="w-8 h-8"></i></div>
+                <div><h4 class="font-bold">Monitoring</h4><p class="text-xs text-muted-foreground">Sentinel & Monitor</p></div>
             </div>
         </div>
     </section>
@@ -246,19 +277,95 @@
             <div class="glass-card glass-card-hover rounded-2xl overflow-hidden p-8 flex flex-col h-full opacity-0 translate-y-8 transition-all duration-700">
                 <div class="p-3 bg-primary/10 rounded-xl text-primary mb-4 w-fit"><i data-lucide="cloud" class="w-6 h-6"></i></div>
                 <h3 class="text-2xl font-bold font-display mb-2">Atumverse Solution</h3>
-                <p class="text-muted-foreground mb-6">Planned and executed end-to-end subscription-to-subscription migration with minimal downtime.</p>
+                <p class="text-muted-foreground mb-6">Planned and assessed existing Azure infrastructure for migration. Executed end-to-end subscription-to-subscription migration with minimal downtime.</p>
                 <div class="mt-auto flex flex-wrap gap-2 pt-4 border-t border-white/5">
                     <span class="text-xs font-mono text-primary bg-primary/10 px-2 py-1 rounded">Azure</span>
                     <span class="text-xs font-mono text-primary bg-primary/10 px-2 py-1 rounded">Migration</span>
+                    <span class="text-xs font-mono text-primary bg-primary/10 px-2 py-1 rounded">Networking</span>
                 </div>
             </div>
             <div class="glass-card glass-card-hover rounded-2xl overflow-hidden p-8 flex flex-col h-full opacity-0 translate-y-8 transition-all duration-700">
                 <div class="p-3 bg-primary/10 rounded-xl text-primary mb-4 w-fit"><i data-lucide="server" class="w-6 h-6"></i></div>
                 <h3 class="text-2xl font-bold font-display mb-2">Symbiosis University</h3>
-                <p class="text-muted-foreground mb-6">Implemented Azure Arc for 270+ on-premises servers and designed Hybrid AD architecture.</p>
+                <p class="text-muted-foreground mb-6">Implemented Azure Arc for 270+ on-premises servers. Designed Hybrid AD & Entra ID architecture with Azure-hosted PDC.</p>
                 <div class="mt-auto flex flex-wrap gap-2 pt-4 border-t border-white/5">
                     <span class="text-xs font-mono text-primary bg-primary/10 px-2 py-1 rounded">Azure Arc</span>
+                    <span class="text-xs font-mono text-primary bg-primary/10 px-2 py-1 rounded">Hybrid AD</span>
                     <span class="text-xs font-mono text-primary bg-primary/10 px-2 py-1 rounded">Entra ID</span>
+                </div>
+            </div>
+            <div class="glass-card glass-card-hover rounded-2xl overflow-hidden p-8 flex flex-col h-full opacity-0 translate-y-8 transition-all duration-700">
+                <div class="p-3 bg-primary/10 rounded-xl text-primary mb-4 w-fit"><i data-lucide="database" class="w-6 h-6"></i></div>
+                <h3 class="text-2xl font-bold font-display mb-2">Compass Global</h3>
+                <p class="text-muted-foreground mb-6">Designed an Active-Passive Disaster Recovery solution. Performed in-place upgrades of Windows Server VMs and data migration.</p>
+                <div class="mt-auto flex flex-wrap gap-2 pt-4 border-t border-white/5">
+                    <span class="text-xs font-mono text-primary bg-primary/10 px-2 py-1 rounded">DR</span>
+                    <span class="text-xs font-mono text-primary bg-primary/10 px-2 py-1 rounded">Backup</span>
+                    <span class="text-xs font-mono text-primary bg-primary/10 px-2 py-1 rounded">Migration</span>
+                </div>
+            </div>
+            <div class="glass-card glass-card-hover rounded-2xl overflow-hidden p-8 flex flex-col h-full opacity-0 translate-y-8 transition-all duration-700 flex items-center justify-center text-center">
+                <i data-lucide="external-link" class="w-12 h-12 text-muted-foreground mb-4"></i>
+                <h3 class="text-xl font-bold font-display">More Projects</h3>
+                <p class="text-sm text-muted-foreground">Available upon request</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credentials Section -->
+    <section id="credentials" class="py-24 px-6 lg:px-12 max-w-7xl mx-auto relative z-10">
+        <div class="text-center mb-16">
+            <span class="text-accent font-mono text-sm uppercase tracking-widest bg-accent/10 px-3 py-1 rounded-full border border-accent/20 mb-3 inline-block">Qualifications</span>
+            <h2 class="text-3xl md:text-5xl font-bold text-foreground">System Credentials</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Certifications -->
+            <div class="glass-card p-8 rounded-3xl opacity-0 translate-y-8 transition-all duration-700" id="certs-card">
+                <div class="flex items-center gap-3 mb-6">
+                    <i data-lucide="shield" class="w-6 h-6 text-primary"></i>
+                    <h3 class="text-2xl font-display font-bold">Certifications</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-sm font-medium">AZ-900</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-sm font-medium">SC-900</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-sm font-medium">AZ-104</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-sm font-medium">AZ-700</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-sm font-medium">AWS CCP</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-sm font-medium">Cisco Networking</span>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="glass-card p-8 rounded-3xl opacity-0 translate-y-8 transition-all duration-700" id="edu-card">
+                <div class="flex items-center gap-3 mb-6">
+                    <i data-lucide="database" class="w-6 h-6 text-primary"></i>
+                    <h3 class="text-2xl font-display font-bold">Education</h3>
+                </div>
+                <div class="space-y-4">
+                    <div class="border-l-2 border-primary/30 pl-4">
+                        <h4 class="font-bold text-lg">MSc.IT</h4>
+                        <p class="text-primary text-sm">GN Khalsa College, MU</p>
+                        <span class="text-xs text-muted-foreground">2021 – 2024 • 7.8 CGPA</span>
+                    </div>
+                    <div class="border-l-2 border-primary/30 pl-4">
+                        <h4 class="font-bold text-lg">BSc</h4>
+                        <p class="text-primary text-sm">SIWS College, MU</p>
+                        <span class="text-xs text-muted-foreground">2017 – 2022 • 6.2 CGPA</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="glass-card p-8 rounded-3xl opacity-0 translate-y-8 transition-all duration-700" id="lang-card">
+                <div class="flex items-center gap-3 mb-6">
+                    <i data-lucide="terminal" class="w-6 h-6 text-primary"></i>
+                    <h3 class="text-2xl font-display font-bold">Languages</h3>
+                </div>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 rounded-lg bg-primary/10 text-primary border border-primary/20 text-sm font-medium">English</span>
+                    <span class="px-4 py-2 rounded-lg bg-primary/10 text-primary border border-primary/20 text-sm font-medium">Hindi</span>
+                    <span class="px-4 py-2 rounded-lg bg-primary/10 text-primary border border-primary/20 text-sm font-medium">Marathi</span>
                 </div>
             </div>
         </div>
@@ -276,16 +383,16 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="space-y-2">
                         <label class="text-sm font-medium text-muted-foreground">Entity Name</label>
-                        <input type="text" required class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-primary transition-all" placeholder="John Doe">
+                        <input type="text" id="name" required class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-primary transition-all" placeholder="John Doe">
                     </div>
                     <div class="space-y-2">
                         <label class="text-sm font-medium text-muted-foreground">Return Address</label>
-                        <input type="email" required class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-primary transition-all" placeholder="john@email.com">
+                        <input type="email" id="email" required class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-primary transition-all" placeholder="john@email.com">
                     </div>
                 </div>
                 <div class="space-y-2">
                     <label class="text-sm font-medium text-muted-foreground">Transmission Payload</label>
-                    <textarea rows="5" required class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-primary transition-all resize-none" placeholder="Describe your needs..."></textarea>
+                    <textarea id="message" rows="5" required class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-primary transition-all resize-none" placeholder="Describe your needs..."></textarea>
                 </div>
                 <button type="submit" class="w-full py-4 bg-primary text-white font-bold rounded-xl flex items-center justify-center gap-2 hover:bg-primary/90 transition-all shadow-[0_0_15px_rgba(0,174,239,0.3)]">
                     Transmit Data <i data-lucide="send" class="w-4 h-4"></i>
@@ -302,7 +409,7 @@
             <span class="hidden sm:inline">•</span>
             <span>+91 7715094490</span>
             <span class="hidden sm:inline">•</span>
-            <span>deepak010412@gmail.com</span>
+            <span><a href="mailto:deepak010412@gmail.com" class="hover:text-primary">deepak010412@gmail.com</a></span>
         </p>
     </footer>
 
@@ -350,16 +457,20 @@
         }, observerOptions);
 
         // Hero Animation
-        document.getElementById('hero-content').classList.remove('opacity-0', 'translate-y-4');
-        document.getElementById('hero-content').classList.add('opacity-100', 'translate-y-0');
+        window.addEventListener('load', () => {
+            const hero = document.getElementById('hero-content');
+            hero.classList.remove('opacity-0', 'translate-y-4');
+            hero.classList.add('opacity-100', 'translate-y-0');
+        });
 
         // Observe elements
-        document.querySelectorAll('#experience-list > div, #skills-grid > div, #projects-grid > div, #contact-form-container').forEach(el => observer.observe(el));
+        document.querySelectorAll('#experience-list > div, #skills-grid > div, #projects-grid > div, #certs-card, #edu-card, #lang-card, #contact-form-container').forEach(el => observer.observe(el));
 
         // Form Submission
         document.getElementById('contact-form').addEventListener('submit', (e) => {
             e.preventDefault();
-            alert('Handshake initiated! (Form submission logic would go here)');
+            const name = document.getElementById('name').value;
+            alert(`Handshake initiated, ${name}! Your transmission has been queued.`);
             e.target.reset();
         });
     </script>
