@@ -1,0 +1,30 @@
+
+> deepak-varma-portfolio@1.0.0 dev
+> npx -y http-server -p 5000
+
+[1G[0K[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K[1mnpm[22m [33mwarn[39m [94mdeprecated[39m whatwg-encoding@2.0.0: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+[1G[0K⠸[1G[0K⠼[1G[0K[33mStarting up http-server, serving [39m[36m./[39m
+[33m[39m
+[33mhttp-server version: [39m[36m14.1.1[39m
+[33m[39m
+[33mhttp-server settings: [39m
+[33mCORS: [39m[31mdisabled[39m
+[33mCache: [39m[36m3600 seconds[39m
+[33mConnection Timeout: [39m[36m120 seconds[39m
+[33mDirectory Listings: [39m[36mvisible[39m
+[33mAutoIndex: [39m[36mvisible[39m
+[33mServe GZIP Files: [39m[31mfalse[39m
+[33mServe Brotli Files: [39m[31mfalse[39m
+[33mDefault File Extension: [39m[31mnone[39m
+[33m[39m
+[33mAvailable on:[39m
+  http://127.0.0.1:[32m5000[39m
+  http://172.31.67.2:[32m5000[39m
+Hit CTRL-C to stop the server
+
+[2026-03-10T06:41:01.148Z]  "[36mGET[39m [36m/[39m" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0"
+(node:1085) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[2026-03-10T06:41:07.104Z]  "[36mGET[39m [36m/[39m" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.0.0 Safari/537.36"
+[2026-03-10T06:41:08.079Z]  "[36mGET[39m [36m/favicon.ico[39m" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.0.0 Safari/537.36"
+[2026-03-10T06:41:08.081Z]  "[31mGET[39m [31m/favicon.ico[39m" Error ([31m404[39m): "[31mNot found[39m"

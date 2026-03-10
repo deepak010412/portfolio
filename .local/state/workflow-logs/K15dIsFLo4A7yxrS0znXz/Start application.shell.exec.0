@@ -1,0 +1,23 @@
+
+> deepak-varma-portfolio@1.0.0 dev
+> npx -y http-server -p 5000
+
+[1G[0K[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K[33mStarting up http-server, serving [39m[36m./[39m
+[33m[39m
+[33mhttp-server version: [39m[36m14.1.1[39m
+[33m[39m
+[33mhttp-server settings: [39m
+[33mCORS: [39m[31mdisabled[39m
+[33mCache: [39m[36m3600 seconds[39m
+[33mConnection Timeout: [39m[36m120 seconds[39m
+[33mDirectory Listings: [39m[36mvisible[39m
+[33mAutoIndex: [39m[36mvisible[39m
+[33mServe GZIP Files: [39m[31mfalse[39m
+[33mServe Brotli Files: [39m[31mfalse[39m
+[33mDefault File Extension: [39m[31mnone[39m
+[33m[39m
+[33mAvailable on:[39m
+  http://127.0.0.1:[32m5000[39m
+  http://172.31.67.2:[32m5000[39m
+Hit CTRL-C to stop the server
+
